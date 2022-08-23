@@ -1,27 +1,39 @@
-# ECommerceProductPage
+# Frontend Mentor - E-commerce product page solution
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.1.
+This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6).
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Users are able to:
 
-## Build
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Open a lightbox gallery by clicking on the large product image
+- Switch the large product image by clicking on the small thumbnail images
+- Add items to the cart
+- View the cart and remove items from it
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[//]: # (### Links)
 
-## Running end-to-end tests
+[//]: # ()
+[//]: # (- Solution URL: [Add solution URL here]&#40;https://your-solution-url.com&#41;)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[//]: # (- Live Site URL: [Add live site URL here]&#40;https://your-live-site-url.com&#41;)
 
-## Further help
+## My process
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Built with
+
+- HTML - A markup language
+- [Sass](https://sass-lang.com/) - CSS extension language
+- [Bootstrap](https://getbootstrap.com/) - CSS Library
+- [Angular](https://angular.io/) - TS framework
+
+## Author
+
+- Frontend Mentor - [@younes-nb](https://www.frontendmentor.io/profile/younes-nb)
+- Email - [younesnikbin@gmail.com](mailto:younesnikbin@gmail.com)
