@@ -1,0 +1,64 @@
+@import "../../colors";
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5rem;
+  border-bottom: 2px solid transparent;
+  height: 100%;
+  transition: border-bottom-color 0.5s;
+
+  a {
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+#cart-btn {
+  width: 24px;
+  height: 22px;
+
+  #cart-badge {
+    background-color: $primary-color;
+    font-size: 0.7rem;
+    padding: .1rem .5rem;
+    top: 20%;
+    left: 110%;
+  }
+
+  #cart-icon {
+    fill: #69707D;
+    transition: all 0.5s;
+
+    &:hover {
+      fill: black;
+    }
+  }
+}
+
+
+#avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.5s;
+
+  &:hover {
+    border: 2px solid $primary-color;
+  }
+}
+
+#checkout {
+  z-index: 1000;
+  width: 20vw;
+  top: 70%;
+  right: 0;
+}
+

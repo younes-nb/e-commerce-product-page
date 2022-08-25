@@ -1,1 +1,29 @@
+@import "colors";
 
+@font-face {
+  font-family: Kumbh Sans;
+  src: url("assets/fonts/KumbhSans-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.button {
+  width: 100%;
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: opacity .5s;
+
+  &:hover {
+    opacity: .7;
+  }
+}
