@@ -1,0 +1,11 @@
+<section>
+  <img id="large-image" class="w-100 h-100 rounded-4 mb-5" [src]="getMainImage()" alt="large image">
+  <div class="d-flex ">
+    <ng-container *ngFor="let image of getImages();let i = index">
+      <div (click)="setMainImage(i)" class="thumbnail-image-container" [ngClass]="image.isSelected ? 'selected' : ''">
+        <img class="thumbnail-image w-100 h-100"
+             [src]="image.thumbnailImageSrc" alt="thumbnail image">
+      </div>
+    </ng-container>
+  </div>
+</section>
