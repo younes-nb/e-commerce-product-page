@@ -1,0 +1,48 @@
+<section id="gallery-container">
+  <div id="gallery">
+    <img (click)="onPreviewImage()" id="main-image" class="w-100 h-100 rounded-4 mb-5" [src]="getMainGalleryImage()"
+         alt="main image">
+    <div class="d-flex">
+      <ng-container *ngFor="let galleryImage of getImages();let i = index">
+        <div (click)="setGalleryMainImage(i)" class="thumbnail-image-container"
+             [ngClass]="galleryImage.isSelectedInGallery ? 'selected' : ''">
+          <img class="thumbnail-image w-100 h-100"
+               [src]="galleryImage.thumbImage" alt="thumbnail image">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div *ngIf="showMask" id="lightbox-container"
+       class="w-100 h-100 position-fixed top-0 start-0 d-flex justify-content-center">
+    <div id="lightbox" class="d-flex flex-column mt-5">
+      <button (click)="showMask = false" id="close-btn" class="p-0 mb-3 align-self-end text-white bg-transparent fs-2">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+      </button>
+      <div id="lightbox-image-container" class="position-relative">
+        <button (click)="previousLightboxImage()" id="previous-btn"
+                class="d-flex justify-content-center align-items-center bg-white rounded-circle p-2 position-absolute">
+          <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+        <img id="lightbox-image" class="w-100 h-100 rounded-4" [src]="getMainLightboxImage()" alt="lightbox image">
+        <button (click)="nextLightboxImage()" id="next-btn"
+                class="d-flex justify-content-center align-items-center bg-white rounded-circle p-2 position-absolute">
+          <svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+      <div class="d-flex mt-5 px-5">
+        <ng-container *ngFor="let lightboxImage of getImages();let j = index">
+          <div (click)="setLightboxMainImage(j)" class="thumbnail-image-container bg-white"
+               [ngClass]="lightboxImage.isSelectedInLightbox ? 'selected' : ''">
+            <img class="thumbnail-image w-100 h-100"
+                 [src]="lightboxImage.thumbImage" alt="thumbnail image">
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
+

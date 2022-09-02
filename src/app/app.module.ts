@@ -3,7 +3,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {NavbarComponent} from './navbar/navbar.component';
-import {CarouselModule} from "./carousel/carousel.module";
+import {GalleryModule} from "./carousel/gallery.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import {CarouselModule} from "./carousel/carousel.module";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    GalleryModule
   ],
   bootstrap: [AppComponent]
 })

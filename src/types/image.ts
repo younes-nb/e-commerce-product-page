@@ -1,5 +1,6 @@
 export default interface Image {
-  largeImageSrc: string,
-  thumbnailImageSrc: string,
-  isSelected: boolean
+  image: string,
+  thumbImage: string,
+  isSelectedInGallery: boolean,
+  isSelectedInLightbox: boolean
 }
