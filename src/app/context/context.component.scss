@@ -1,0 +1,35 @@
+@import "src/colors";
+
+#context-container {
+  #context-top-header {
+    color: $primary-color;
+    font-size: .7rem;
+    letter-spacing: 2px;
+  }
+
+  #discount {
+    background-color: $secondary-color;
+    color: $primary-color;
+    font-size: .9rem;
+  }
+
+  #price {
+    color: hsl(220, 14%, 75%);
+  }
+
+
+  #decrease:hover, #increase:hover {
+    svg {
+      opacity: .5;
+    }
+  }
+
+  #count {
+    background-color: #F0F0F0;
+  }
+
+  #add-to-cart-btn {
+    box-shadow: 0 15px 45px -10px $primary-color;
+  }
+
+}
