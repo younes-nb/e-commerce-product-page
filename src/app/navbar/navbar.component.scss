@@ -57,8 +57,22 @@
 
 #checkout {
   z-index: 1000;
-  width: 20vw;
+  width: 22vw;
   top: 70%;
   right: 0;
+
+  .item-container {
+    height: 50px;
+
+    .item-image {
+      width: 50px;
+    }
+
+    .item-info {
+      .item-title, .item-price {
+        font-size: .9rem;
+      }
+    }
+  }
 }
 

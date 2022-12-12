@@ -25,17 +25,11 @@ export class ProductService {
     return this.count;
   }
 
-  decrease() {
-    if (this.count > 0) {
-      this.count--;
-    }
+  setCount(count : number) {
+    this.count = count;
   }
 
-  increase() {
-    this.count++;
-  }
-
-  getDiscountedPrice() {
+  getDiscountedPrice()  {
     return this.product.price * (1 - this.product.discount);
   }
 

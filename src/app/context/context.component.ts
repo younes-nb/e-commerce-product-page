@@ -8,6 +8,8 @@ import {ProductService} from "../product.service";
 })
 export class ContextComponent implements OnInit {
 
+  private count = 0;
+
   constructor(private productService: ProductService) {
   }
 
@@ -15,15 +17,15 @@ export class ContextComponent implements OnInit {
   }
 
   decreaseCount() {
-    this.productService.decrease();
+    return this.count-- ? this.count : this.count = 0;
   }
 
   increaseCount() {
-    this.productService.increase();
+    return ++this.count;
   }
 
   getCount() {
-    return this.productService.getCount();
+    return this.count;
   }
 
   getProduct() {
@@ -32,5 +34,9 @@ export class ContextComponent implements OnInit {
 
   getDiscountedPrice() {
     return this.productService.getDiscountedPrice();
+  }
+
+  addToCart() {
+    this.productService.setCount(this.getCount());
   }
 }
